@@ -12,6 +12,8 @@ public class PAI_USAContext : IdentityDbContext<IdentityUser>
     {
     }
     public DbSet<CrmLogIn> CrmLogIn { get; set; }   
+    public DbSet<Bank>  Banks { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
